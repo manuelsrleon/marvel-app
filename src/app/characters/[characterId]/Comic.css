@@ -1,0 +1,14 @@
+.comic-cover {
+  object-fit: cover;
+  width: 160px;
+  height: 250px;
+}
+.comic-title {
+  font-weight: bold;
+  margin: 10px 0px;
+}
+.comic-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 10rem;
+}

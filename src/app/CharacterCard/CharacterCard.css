@@ -1,0 +1,73 @@
+.character-card {
+  width: 100%;
+  height: min(245px, auto);
+  display: flex;
+  flex-direction: column;
+}
+.character-thumbnail {
+  width: 100%;
+  object-fit: cover;
+  height: 14rem;
+}
+.character-card::after {
+  content: "";
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  height: 0;
+  border-right: 30px solid;
+}
+.character-title {
+  background-color: black;
+  height: 56px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  transition: all 0.6s ease-in;
+  position: relative;
+  z-index: 1;
+  clip-path: polygon(-10% -10%, 100% -10%, 100% 75%, 94% 100%, 0 100%);
+}
+.character-title::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 6px;
+  background: var(--accent-color);
+  position: absolute;
+
+  top: -6px;
+  transition: height 0.4s ease;
+  transform-origin: top;
+  z-index: 0;
+}
+
+.character-name {
+  padding-bottom: 7px;
+  text-transform: uppercase;
+}
+.character-name,
+.fav-button {
+  z-index: 10;
+}
+
+.character-name-and-fav-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 6%;
+  font-size: 0.8em;
+}
+
+.character-card:hover .character-title::before {
+  opacity: 1;
+  height: 110%;
+}
+.fav-button {
+  border: none;
+  background-color: transparent;
+}

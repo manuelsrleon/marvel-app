@@ -1,0 +1,27 @@
+.loader-bar {
+  width: 100%;
+  height: 0.4rem;
+  position: absolute;
+  top: 84px;
+  opacity: 1;
+}
+
+.loader-bar-progress {
+  height: 100%;
+  background-color: var(--accent-color);
+  animation: progressAnimation 0.5s ease-out forwards;
+}
+
+@keyframes progressAnimation {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.completed {
+  opacity: 0;
+  transition: 0.5s linear;
+}

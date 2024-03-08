@@ -1,0 +1,52 @@
+html {
+  font-family: "Roboto Condensed", "sans-serif";
+  --main-bg-color: white;
+  --header-bar-color: black;
+  --accent-color: #ec1d24;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  border-bottom: 1px solid #444;
+  padding: 0rem 0rem;
+  background-color: var(--header-bar-color);
+
+  display: flex;
+  flex-direction: row;
+  height: 84px;
+  align-items: center;
+  justify-content: space-between;
+
+  color: white;
+  position: relative;
+  width: 100%;
+  z-index: 10;
+}
+
+#favourites-counter-and-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-right: 3.1rem;
+}
+
+#marvel-logo {
+  height: 44px;
+  width: auto;
+  margin-left: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  #favourites-counter-and-button {
+    margin-right: 1em;
+  }
+}
