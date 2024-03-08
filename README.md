@@ -23,4 +23,8 @@ El proyecto tiene configurado Jest adaptado a NextJS, usando JSDom. Los tests se
 
 ## API Key
 
-Para poder utilizar la aplicación, es necesario incluir en .env una API key válida obtenida de developer.marvel.com
+Para poder utilizar la aplicación, se ha incluido el API Key. Si bien esto no es lo óptimo, se ha hecho con la intención de facilitar la corrección de la prueba.
+
+## Happy path
+
+Se ha contemplado el happy path en los documentos de diseño con intención de acotar el scope de la prueba
