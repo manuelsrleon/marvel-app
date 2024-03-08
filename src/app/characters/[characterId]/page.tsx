@@ -110,14 +110,14 @@ export default function CharacterPage({
             </div>
           </div>
         </div>
-        <div className="comics-container">
+        {comics.length > 0 && <div className="comics-container">
           <h2 className="comics-section-header">COMICS</h2>
           <div className="comics-row" tabIndex={0}>
             {comics.map((comic) => (
               <Comic key={comic.id} comic={comic} />
             ))}
           </div>
-        </div>
+        </div>}
       </div>
     </>
   );
